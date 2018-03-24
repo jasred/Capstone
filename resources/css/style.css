@@ -1,0 +1,101 @@
+
+/* Universal Styles */
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header and navigation */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem; /* 64px */
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem; /* 24px */
+}
+
+header img {
+  border: 1px solid red; /* ------------------------------------   */
+}
+
+.company .colmar {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.company .academy {
+  font-size: 1.2rem;
+  color: darkgrey;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem; /* 24px */
+}
+
+nav li {
+  color: LightSlateGray;
+  display: inline-block;
+  margin-left: 1rem; /* 16px */
+}
+
+/* Main */
+
+main {
+  display: flex;
+  max-width: 100%;
+  background-color: SeaShell;
+  padding: 2rem 1.5rem; /* 32px 24px */
+  border: 1px solid blue; /* ------------------------------------   */
+}
+
+main .image {
+  max-width: 60%;
+  margin-right: 1.5rem; /* 24px */
+  overflow: hidden;
+  border: 1px solid green; /* ------------------------------------   */
+}
+
+main img {
+  max-width: 100%;
+  border: 1px solid red; /* ------------------------------------   */
+}
+
+main .message {
+  /*
+  max-width: 40%;
+  */
+  overflow: hidden;
+  margin: auto 1.5rem; /* 24px */
+  border: 1px solid red; /* ------------------------------------   */
+}
+
+main .message h1 {
+  font-size: 2.4rem;
+  color: LightSlateGray;
+  font-weight: bold;
+  line-height: normal;
+}
+
+main .message h3 {
+  color: LightSlateGray;
+  margin-top: 1.875rem;  /* 30px */
+  font-size: 1.2rem;
+}
+
+.button {
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;  /* 8px */
+  margin: 2.5rem 0;  /* 40px */
+  background-color: LightSlateGray;
+}
