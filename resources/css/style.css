@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-  border: 1px solid red; /* ------------------------------------   */
+  border: 1px solid red; /* Temporary ------------------------------------   */
 }
 
 .company .colmar {
@@ -60,12 +60,12 @@ main .image {
   max-width: 60%;
   margin-right: 1.5rem; /* 24px */
   overflow: hidden;
-  border: 1px solid green; /* ------------------------------------   */
+  border: 1px solid green; /* Temporary ------------------------------------   */
 }
 
 main img {
   width: 100%;
-  border: 1px solid red; /* ------------------------------------   */
+  border: 1px solid red; /* Temporary ------------------------------------   */
 }
 
 main .message {
@@ -74,7 +74,7 @@ main .message {
   */
   overflow: hidden;
   margin: auto 1.5rem; /* 24px */
-  border: 1px solid red; /* ------------------------------------   */
+  border: 1px solid red; /* Temporary ------------------------------------   */
 }
 
 main .message h1 {
