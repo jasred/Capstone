@@ -54,7 +54,6 @@ main {
   max-width: 100%;
   background-color: SeaShell;
   padding: 2rem 1.5rem; /* 32px 24px */
-  border: 1px solid blue; /* ------------------------------------   */
 }
 
 main .image {
@@ -65,7 +64,7 @@ main .image {
 }
 
 main img {
-  max-width: 100%;
+  width: 100%;
   border: 1px solid red; /* ------------------------------------   */
 }
 
