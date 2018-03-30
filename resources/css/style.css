@@ -1,13 +1,18 @@
 
+
 /* Universal Styles */
+
 
 html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  color: #405162;
 }
 
-/* Header and navigation */
+
+/* Header and Navigation */
+
 
 header {
   display: flex;
@@ -21,8 +26,8 @@ header {
   margin-left: 1.5rem; /* 24px */
 }
 
-header img {
-  border: 1px solid red; /* Temporary ------------------------------------   */
+header .logo {
+  width: 40px;
 }
 
 .company .colmar {
@@ -42,59 +47,549 @@ nav {
 }
 
 nav li {
-  color: LightSlateGray;
   display: inline-block;
   margin-left: 1rem; /* 16px */
 }
 
+header-mobile {
+  display: none;
+}
+
+
+/* Header and Navigation - Mobile */
+
+
+@media only screen and (max-width: 760px) {
+
+  header {
+    display: none;
+  }
+
+  header-mobile {
+
+    display: block;
+  }
+
+  header-mobile .mobile-nav a img{
+    display: block;
+    width: 40px;
+  }
+
+  header-mobile .mobile-nav {
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+
 /* Main */
 
-main {
+
+.main {
   display: flex;
   max-width: 100%;
-  background-color: SeaShell;
+  background-color: #FFF7DD;
   padding: 2rem 1.5rem; /* 32px 24px */
 }
 
-main .image {
+.main .image {
   max-width: 60%;
   margin-right: 1.5rem; /* 24px */
-  overflow: hidden;
-  border: 1px solid green; /* Temporary ------------------------------------   */
 }
 
-main img {
+.main img {
   width: 100%;
-  border: 1px solid red; /* Temporary ------------------------------------   */
+  display: block;
 }
 
-main .message {
-  /*
-  max-width: 40%;
-  */
+.main .message {
   overflow: hidden;
   margin: auto 1.5rem; /* 24px */
-  border: 1px solid red; /* Temporary ------------------------------------   */
 }
 
-main .message h1 {
+.main .message h1 {
   font-size: 2.4rem;
-  color: LightSlateGray;
   font-weight: bold;
   line-height: normal;
 }
 
-main .message h3 {
-  color: LightSlateGray;
+.main .message h3 {
   margin-top: 1.875rem;  /* 30px */
   font-size: 1.2rem;
 }
 
-.button {
+.main .button {
   border-radius: 4px;
   color: white;
   text-align: center;
   padding: 0.5rem 0;  /* 8px */
   margin: 2.5rem 0;  /* 40px */
-  background-color: LightSlateGray;
+  background-color: #405162;
+}
+
+.main .button:hover {
+  background-color: #FF9000;
+}
+
+.main-mobile {
+  display: none;
+}
+
+
+/* Main - Mobile */
+
+
+@media only screen and (max-width: 760px) {
+
+  .main {
+    display: none;
+  }
+
+  .main-mobile {
+    display: inline-block;
+    background-color: #FFF7DD;
+  }
+
+  .main-mobile .image img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+  }
+
+  .main-mobile .message {
+    margin: 2rem 1rem;
+  }
+
+  .main-mobile h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .main-mobile h3 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .main-mobile .button {
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 2.5rem 0;
+    background-color: #405162;
+  }
+
+  .main .button:hover {
+    background-color: #FF9000;
+  }
+
+}
+
+
+/* Secondary */
+
+
+.secondary {
+  display: flex;
+  max-width: 100%;
+}
+
+.secondary .left-container {
+  max-width: 60%;
+  border-right: 1px solid #D4D7DB;
+}
+
+.left-container .image {
+  padding: 2rem 1.5rem;
+}
+
+.left-container img {
+  width: 100%;
+  display: block;
+}
+
+.left-container .copy {
+  padding: 0 1.5rem;
+}
+
+.left-container h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.left-container .name {
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  color: #9EA4AA;
+}
+
+.right-container {
+  margin-top: 1rem;
+}
+
+.right-container .events {
+  display: flex;
+}
+
+.right-container .events:hover {
+  background-color: #FFB350;
+  color: white;
+}
+
+.secondary .right-container {
+  max-width: 40%;
+}
+
+.right-container .image {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.events img {
+  width: 100%;
+  display: block;
+}
+
+.right-container .copy{
+  width: 65%;
+  margin: auto;
+}
+
+.events h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.events p {
+  margin: 0.5rem 0;
+}
+
+.events p.event-button {
+  color: #D67900;
+}
+
+.right-container .events.first {
+  border-bottom: 1px solid #D4D7DB;
+}
+
+.right-container .events.second {
+  border-top: 1px solid #D4D7DB;
+  border-bottom: 1px solid #D4D7DB;
+}
+
+.right-container .events.third {
+  border-top: 1px solid #D4D7DB;
+}
+
+.right-container .events-mobile {
+  display: none;
+}
+
+
+/* Secondary - Mobile */
+
+
+
+@media only screen and (max-width: 760px) {
+
+  .secondary .left-container {
+    display: none;
+  }
+
+  .right-container {
+    margin: 0 auto;
+  }
+
+  .right-container img {
+    display: none;
+  }
+
+  .right-container .events-mobile {
+    display: block;
+  }
+
+  .secondary .right-container {
+    max-width: 100%;
+  }
+
+  .right-container .image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .events .events-mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .right-container .events.first {
+    border-bottom: 0 solid #D4D7DB;
+  }
+
+  .right-container .events.second {
+    border-top: 0 solid #D4D7DB;
+    border-bottom: 0 solid #D4D7DB;
+  }
+
+  .right-container .events.third {
+    border-top: 0 solid #D4D7DB;
+  }
+
+  .right-container .events {
+    flex-direction: column;
+  }
+
+  .right-container .copy{
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .events p.event-button {
+    margin-bottom: 2rem;
+  }
+
+  .events.third p.event-button {
+    margin-bottom: 3rem;
+  }
+
+}
+
+
+/* Start Learning */
+
+
+.learning {
+  background-color: #FFF7DD;
+  padding: 2rem 3.5rem;
+  max-width: 100%;
+}
+
+.learning h2 {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.classes {
+  display: flex;
+  justify-content: center;
+}
+
+.class {
+  /*
+  border: 4px solid white;
+  */
+  max-width: 30%;
+  background-color: white;
+  margin: 1rem;
+}
+
+/*
+.learning .class:hover {
+  border: 4px solid #FF9000;
+}
+*/
+
+.class img {
+  width: 100%;
+  display: block;
+}
+
+.learning .class-desc {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.learning .class-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.learning p {
+  padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .learning {
+    padding: 2rem 1rem;
+    border-top: 1px solid #D4D7DB;
+    border-bottom: 1px solid #D4D7DB;
+  }
+
+  .learning .classes .class-image {
+    display: none;
+  }
+
+  .learning .classes .class-desc p {
+    display: none;
+  }
+
+  .learning {
+    background-color: white;
+  }
+
+  .learning .classes .class-desc h3 {
+    padding: 1rem;
+    background-color: #FFF7DD;
+  }
+
+  .learning .classes {
+    flex-direction: column;
+  }
+
+  .class {
+    max-width: 100%;
+    margin: 0.25rem;
+  }
+
+  .learning .class-desc {
+    padding: 0;
+  }
+
+}
+
+
+/* Thesis Exhibit */
+
+
+.thesis {
+  max-width: 100%;
+}
+
+.thesis-container {
+  display: flex;
+}
+
+.thesis h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.thesis .thesis-left {
+  max-width: 60%;
+}
+
+.thesis-left {
+  margin: 0 1.5rem;
+}
+
+.thesis-left .videos {
+  width: 100%;
+}
+
+.thesis-left h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+.thesis-left p {
+  padding: 0.5rem 0 2rem 0;
+}
+
+.thesis-right .thesis-info {
+  display: flex;
+}
+
+.thesis-right .thesis-info:hover {
+  background-color: #FFB350;
+  color: white;
+}
+
+.thesis .thesis-right {
+  max-width: 40%;
+}
+
+.thesis-info .image {
+  max-width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-info img {
+  width: 100%;
+  display: block;
+}
+
+.thesis-right .copy{
+  width: 65%;
+  margin: auto;
+}
+
+.thesis-info h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.events p {
+  margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .thesis h2 {
+    margin: 2rem auto 1rem auto;
+  }
+
+  .thesis .thesis-right {
+    display: none;
+  }
+
+  .thesis .thesis-left {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .thesis-left .copy {
+    display: none;
+  }
+
+  .thesis-container {
+    display: block;
+  }
+
+  .thesis video {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/*  Footer */
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
+  font-size: 0.8rem;
+  color: #8D8F92;
+  border-top: 1px solid #D2D2D2;
+}
+
+.footer-nav a {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+  footer {
+    padding: 1rem;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
 }
